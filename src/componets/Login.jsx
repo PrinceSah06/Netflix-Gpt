@@ -58,7 +58,7 @@ const login = () => {
                 );
 
                 // Profile updated!
-                navigete("/browser");
+              
                 // ...
               })
               .catch((error) => {
@@ -68,8 +68,8 @@ const login = () => {
               });
 
           //if sucess
-          console.log(user);
-          navigete("/browser");
+          // console.log(user);
+     
 
           // ...
         })

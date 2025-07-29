@@ -1,11 +1,46 @@
 import React from 'react'
+import { useEffect } from 'react';
 import { signOut } from 'firebase/auth';
 import { auth } from '../utils/firebase';
-import { Navigate, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+  import { onAuthStateChanged } from "firebase/auth";
+  // import {unsubscribe}
+  
+
+import { addUser,removeUser } from '../utils/userSlice.js';
+
 
 const Header = () => {
 
+
+
 const navigate = useNavigate()
+
+  const dispatch =useDispatch()
+  
+
+useEffect(()=>{
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+ 
+    const {uid,email,displayName}= user;
+    dispatch(addUser({uid:uid,email:email,displayName:displayName}));
+    navigate('/browser')
+   
+  } else {
+    // User is signed out
+    
+    dispatch(removeUser())
+    navigate('/')
+  }
+});
+
+//unsubscribe when componets unmounts
+
+// return ()=>{  return unsubscribe()}
+}, [])
 
   const handelsignOut=( ) =>{
     console.log('inside handleSIgnout')
