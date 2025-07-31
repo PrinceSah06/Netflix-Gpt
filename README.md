@@ -15,6 +15,15 @@ useRef Hook
 -impimetation sign up
 -BugFix : Signup user  
 -BUgFix : if user is not logedin user can't go to browser page
+build secondory componets
+-buil movie list
+-buil movie card
+-build gptSearch compnet
+-Gpt Search Bar
+
+-Multi-language  Feture in our Gpt Page
+
+
 
 
 
