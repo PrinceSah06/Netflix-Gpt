@@ -1,46 +1,36 @@
-# Netflix-Gpt
+﻿# Netflix-Gpt
 
-#steps
-install tailwind css
--Header
--Routing of app
--Login form
--Sign Up form
--form validation
-useRef Hook
--firebase setup
--Create signup User Account
--Impliment sign in user
--Created our Store with redux
--impimetation sign up
--BugFix : Signup user  
--BUgFix : if user is not logedin user can't go to browser page
-build secondory componets
--buil movie list
--buil movie card
--build gptSearch compnet
--Gpt Search Bar
+Netflix Gpt project focused on Firebase with a stack that includes Firebase, React, Redux Toolkit, Streaming UI.
 
--Multi-language  Feture in our Gpt Page
+## Tech Stack
 
+- Firebase
+- React
+- Redux Toolkit
+- Streaming UI
+- Tailwind CSS
+- TypeScript
+- Vite
 
+## Project Structure
 
+- `.firebase/`
+- `src/`
 
+## Packages And Scripts
 
-# features
+- `vite-project` at `Netflix-Gpt`
+  Available scripts: build, dev, lint, preview.
 
-Login page
--SignIn and SignUp
--redirect to browser page
+## Getting Started
 
-- header(after login )
-  -main movie
+1. Install dependencies in the package you want to run.
+2. Create a local `.env` from any generated `.env.example` file.
+3. Run the main development script for that package.
 
-  - trailer in backgroud
-  - title
-    -movieSuggestion
-    -list of differnet movie
+## Maintenance Notes
 
--Netflix Gpt
--search bar
-movie suggestions
+- Generated folders such as `node_modules/`, `dist/`, and `.next/` should stay untracked.
+- Secrets should stay in local `.env` files and never be committed.
+- Update this README when the project purpose or setup changes.
+
